@@ -14,6 +14,8 @@ Also included is a **Stencil for HTML** language that supports both Stencil and 
 
 ![Stencil for HTML syntax highlighting](images/stencil-html.png)
 
+A **Stencil for YAML** language is also included that supports both Stencil and YAML.
+
 ### Snippets
 
 Snippets are included for all common tags:
@@ -60,6 +62,7 @@ This extension is set up to use the following file extensions:
 
 - `.stencil`: Stencil templates.
 - `.html.stencil`: Stencil for HTML templates.
+- `.yml.stencil`, `.yaml.stencil`: Stencil for YAML templates.
 
 If you use Stencil exclusively for HTML and would like to use the `.stencil` extension for Stencil for HTML instead, add the following to your Visual Studio Code preferences:
 
