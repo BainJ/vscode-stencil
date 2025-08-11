@@ -1,0 +1,97 @@
+{
+    "name": "stencil",
+    "displayName": "Stencil",
+    "description": "Support for the Stencil template language.",
+    "version": "2.0.1",
+    "publisher": "svanimpe",
+    "author": {
+        "name": "Steven Van Impe",
+        "email": "steven.vanimpe@icloud.com",
+        "url": "http://svanimpe.be"
+    },
+    "icon": "images/icon.png",
+    "homepage": "https://github.com/stencilproject/vscode-stencil",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/stencilproject/vscode-stencil"
+    },
+    "bugs": {
+        "url": "https://github.com/stencilproject/vscode-stencil/issues"
+    },
+    "engines": {
+        "vscode": "^1.19.0"
+    },
+    "categories": [
+        "Programming Languages",
+        "Snippets"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "stencil",
+                "aliases": [
+                    "Stencil"
+                ],
+                "extensions": [
+                    ".stencil"
+                ],
+                "configuration": "stencil-language-configuration.json"
+            },
+            {
+                "id": "stencil-html",
+                "aliases": [
+                    "Stencil for HTML"
+                ],
+                "extensions": [
+                    ".html.stencil"
+                ],
+                "configuration": "stencil-html-language-configuration.json"
+            },
+            {
+                "id": "stencil-yaml",
+                "aliases": [
+                    "Stencil for YAML"
+                ],
+                "extensions": [
+                    ".yml.stencil",
+                    ".yaml.stencil"
+                ],
+                "configuration": "stencil-yaml-language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "stencil",
+                "scopeName": "text.stencil",
+                "path": "syntaxes/stencil.tmLanguage"
+            },
+            {
+                "language": "stencil-html",
+                "scopeName": "text.html.stencil",
+                "path": "syntaxes/stencil-html.tmLanguage"
+            },
+            {
+                "language": "stencil-yaml",
+                "scopeName": "source.yaml.stencil",
+                "path": "syntaxes/stencil-yaml.tmLanguage"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "stencil",
+                "path": "snippets/snippets.json"
+            },
+            {
+                "language": "stencil-html",
+                "path": "snippets/snippets.json"
+            },
+            {
+                "language": "stencil-yaml",
+                "path": "snippets/snippets.json"
+            }
+        ]
+    },
+    "dependencies": {
+        "@vscode/vsce": "^3.6.0"
+    }
+}

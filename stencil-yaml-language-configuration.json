@@ -1,0 +1,18 @@
+{
+  "comments": {
+    "lineComment": "#"
+  },
+  "brackets": [],
+  "surroundingPairs": [],
+  "autoClosingPairs": [
+    [ "{{", "}}" ],
+    [ "{%", "%}" ],
+    [ "{#", "#}" ]
+  ],
+  "indentationRules": {
+    "increaseIndentPattern": "\\{%\\s(block|if|filter|for)(?!.*\\{%\\send\\1)|\\{%\\s(?:elif|else)(?!.*\\{%\\sendif)|\\{%\\s(?:empty)(?!.*\\{%\\sendfor)|:(?=\\s*$)",
+    "decreaseIndentPattern": "^\\s*(\\{%\\s(?:elif|else|empty|endblock|endif|endfilter|endfor))|^(?:\\s*-\\s*)?[^#]*?[^:]:\\s*[^#]*$"
+  }
+}
+
+
